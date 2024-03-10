@@ -1,4 +1,4 @@
---count the number of athletes from each country
+---Count the number of athletes from each country
 
 SELECT Country, count(*) as athlete_count
 from Athlete
@@ -16,7 +16,8 @@ group by TeamCountry;
 
 
 ---Calculate the avg number of enteries by gender for each discipline
+
 SELECT Discipline, avg(Male) as avg_male,
 avg(Female) as avg_female
 from entriesgender 
-group by Discipline
+group by Discipline;
